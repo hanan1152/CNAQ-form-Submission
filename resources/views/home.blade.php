@@ -12,6 +12,12 @@
 <body>
 <h1> Home page </h1>
 <p> Please search for your grades form the nav bar </p>
+
+@if (session('status'))
+ <div class="alert alert-success  text-center">
+ {{ session('status') }}
+ </div>
+@endif
     
 </body>
 </html>

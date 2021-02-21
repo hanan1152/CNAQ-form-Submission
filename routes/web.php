@@ -24,4 +24,4 @@ Route::get('/studentForm', function () {
 
 Route::post('/studentForm/submit', [StudentController::class, 'submit'])->name('studentFormSubmission');
 
-Route::get('/contact/messages', [MessageController::class, 'index'])->name('contactMessages');
+Route::get('/studentIndex/index', [StudentController::class, 'index'])->name('studentDetails');

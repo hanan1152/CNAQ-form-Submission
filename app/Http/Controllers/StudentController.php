@@ -19,11 +19,17 @@ class StudentController extends Controller
 
         $students->save();
 
-        return view('studentForm');
-        // return redirect()->route('home')->with('status' , 'Message was received');
+       // return view('studentForm');
+        return redirect()->route('home')->with('status' , 'Message was received');
       // return $request->input('name');
 
        // return view('message', ['httpRequest' => $request]);
 
     }
+
+
+    public function index(){
+        $students = Student::all();
+        return view('studentIndex', ['students' => $students]);
+       }
 }

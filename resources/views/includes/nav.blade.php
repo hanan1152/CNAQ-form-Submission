@@ -13,7 +13,7 @@
         <a class="nav-link" href="/studentForm">Students-form</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/">Show All Students</a>
+        <a class="nav-link" href="/studentIndex/index">Show All Students</a>
       </li>
     </ul>
   </div>
