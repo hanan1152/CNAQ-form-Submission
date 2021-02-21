@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StudentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,10 @@ Route::get('/', function () {
     return view('home');
 })->name('home');;
 
+Route::get('/studentForm', function () {
+    return view('studentForm');
+})->name('studentForm');
+
+Route::post('/studentForm/submit', [StudentController::class, 'submit'])->name('studentFormSubmission');
+
+Route::get('/contact/messages', [MessageController::class, 'index'])->name('contactMessages');

@@ -10,7 +10,7 @@
         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/">Students</a>
+        <a class="nav-link" href="/studentForm">Students-form</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/">Show All Students</a>
